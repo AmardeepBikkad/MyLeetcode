@@ -3,8 +3,8 @@ class Solution {
         var input = x
         var ans = 0
         while input != 0 { 
-            ans *= 10
-            ans = ans + (input % 10)
+            let mod = input % 10
+            ans = mod + (ans * 10)
             input /= 10
         }
         return ans < Int32.min || ans > Int32.max ? 0 : ans 
