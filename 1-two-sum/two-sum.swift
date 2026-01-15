@@ -1,6 +1,6 @@
 class Solution {
     func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
-        //substract current number in array from target -> if we found substraction == number added in dictionary -> simply return index of them
+        //substract current number in array from target -> if we found substraction == number added in dictionary -> simply return index of them -> else keep adding numbers with its index in dict
         var dict = [Int: Int]()
         for (i, num) in nums.enumerated() {
             if let foundedNumber = dict[target - num] { 
