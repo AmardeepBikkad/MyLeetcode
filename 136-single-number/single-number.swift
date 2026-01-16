@@ -10,9 +10,9 @@ class Solution {
             }
         }
 
-        for each in nums {
-            if dict[each] == 1 {
-                return each
+        for (key, value) in dict {
+            if value == 1 {
+                return key
             }
         }
         return 0
