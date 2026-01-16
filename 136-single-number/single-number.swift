@@ -3,11 +3,7 @@ class Solution {
         var dict = [Int: Int]()
 
         for each in nums {
-            if dict[each] == nil {
-                dict[each, default: 0] = 1
-            } else {
-                dict[each] = (dict[each] ?? 0) + 1
-            }
+            dict[each] = (dict[each] ?? 0) + 1
         }
 
         for (key, value) in dict {
