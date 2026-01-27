@@ -15,9 +15,9 @@ class Solution {
             }
         }
 
-        // for (key, value) in dict {
-        //     return value != 0 ? false : true
-        // }
-        return true 
+        for (key, value) in dict {
+            return value != 0 ? false : true
+        }
+        return false 
     }
 }
