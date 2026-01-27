@@ -14,10 +14,6 @@ class Solution {
                 return false
             }
         }
-
-        for (key, value) in dict {
-            return value != 0 ? false : true
-        }
-        return false 
+        return true 
     }
 }
