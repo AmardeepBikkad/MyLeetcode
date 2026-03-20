@@ -1,16 +1,15 @@
 class Solution {
     func removeDuplicates(_ nums: inout [Int]) -> Int {
-        var current = 0
-        for i in 0..<nums.count {
-            if nums[i] == nums[current] {
-                continue
-            } else {
-                current += 1
-                nums[current] = nums[i]
+        if nums.count == 1 {return 1}
+
+        var insertIndex = 1
+
+        for i in 1..<nums.count {
+            if nums[i] != nums[i-1] {
+                nums[insertIndex] = nums[i]
+                insertIndex += 1
             }
         }
-        return current + 1
-        
-
+        return insertIndex
     }
 }
