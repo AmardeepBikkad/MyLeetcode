@@ -1,6 +1,6 @@
 class Solution {
     func removeDuplicates(_ nums: inout [Int]) -> Int {
-        if nums.count == 1 {return 1}
+        //
 
         var insertIndex = 1
 
