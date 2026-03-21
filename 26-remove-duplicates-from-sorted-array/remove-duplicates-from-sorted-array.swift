@@ -1,6 +1,5 @@
 class Solution {
     func removeDuplicates(_ nums: inout [Int]) -> Int {
-        //
 
         var insertIndex = 1
 
